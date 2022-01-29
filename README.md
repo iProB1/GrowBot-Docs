@@ -1,6 +1,6 @@
 * discord = https://discord.gg/tEZ49jPkfx
 
-"im not available in week"
+"probably project finish this week"
 
 # POFWARE Documentation
 * [Structs](#structs)
