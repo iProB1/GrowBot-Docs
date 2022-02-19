@@ -147,7 +147,7 @@ Example:
 packet = {}
 packet.type = 10 
 packet.int_data = 48 -- Clothing ID (Jeans)
-SendPacketRaw(false, packet)
+SendPacketRaw(packet)
 ```
 ## SendVarlist
 `SendVarlist(Variantlist varlist)`
