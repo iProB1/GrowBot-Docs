@@ -1,4 +1,5 @@
-#POFWARE 0.1
+POFWARE 0.11
+-------------------
 
 General:
 --
@@ -54,7 +55,7 @@ Generate Account
 World tab:
 --
 ```
-Not done
+Shows Players and their infos
 ```
 
 Debug tab:
