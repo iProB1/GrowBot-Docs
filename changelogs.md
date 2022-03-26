@@ -10,6 +10,7 @@ Added many cheats
 Cheats tab:
 --
 ```
+Main:
 Pathfinder
 Auto Collect
 tp to item
@@ -20,6 +21,20 @@ Nazi Smoke
 dance move
 System speed
 blink color
+Nick
+Typer
+
+visual:
+Visual Spin
+
+GTPS:
+Crasher
+Public Lock
+
+
+ESP:
+item esp
+player esp
 ```
 
 Auto Tab: (for main)
@@ -43,9 +58,14 @@ Not have too many features so due to add more
 Misc tab:
 --
 ```
+Tools Tab:
 Login spoof
 Custom flag
 Spoof to a server 
+Windows Spoof 
+Random name Spoof
+Database:
+there item database
 ```
 
 Multibot tab:
