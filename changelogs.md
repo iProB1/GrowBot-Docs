@@ -4,13 +4,7 @@ POFWARE 0.11
 General:
 --
 ```
-Added Generate Account
-Added Automation
-Added Executor ( need add new features )
-Added Misc
-Added Multibot
-Added World
-Added Game Logs ( debug )
+Added many cheats
 ```
 
 Cheats tab:
@@ -18,6 +12,14 @@ Cheats tab:
 ```
 Pathfinder
 Auto Collect
+tp to item
+Ghost
+Raw Packet Blocker
+Click TP
+Nazi Smoke
+dance move
+System speed
+blink color
 ```
 
 Auto Tab: (for main)
