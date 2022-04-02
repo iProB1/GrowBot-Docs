@@ -26,7 +26,7 @@ if too many people want lower price
 What Proxy Connection does?
 --
 ```
-i use that for login per bots/main from different ips to game
+i use that for login from different ips to game
 that lower risk of ban thats why im using it 
 ```
 
