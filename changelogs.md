@@ -1,10 +1,16 @@
-POFWARE 0.11
+POFWARE 0.12
 -------------------
 
 General:
 --
 ```
-Added many cheats
+Added enet proxy cmd features etc
+Added Discord RPC
+Added Rank System and Auth
+Added more GTPS cheats
+Added World Player info
+Added to misc tab Mod Checker
+Added more features to executor
 ```
 
 Cheats tab:
@@ -30,9 +36,11 @@ Visual Spin
 GTPS:
 Crasher
 Public World
-get access from lock
+World Access
 Name Changer
-
+Spam Blast
+Delete Saved Worlds
+Change Vps Pass
 
 ESP:
 item esp
@@ -49,25 +57,56 @@ Added Cook Berry, Arroz
 Added Crime 
 Added Surgery
 Added Startopia
+
+Added Helpers to Crime / Surgery / Startopia
 ```
 
 Executor tab:
 --
 ```
-Not have too many features so due to add more 
+Main Executor (main player):
+SendPacket(type, packet)
+SendPacketRaw(packet)
+SendVarlist()
+Warp(world name)
+Chat(text)
+Teleport(player name)
+PathFind(posx, posy)
+Reconnect()
+GetLocal()
+LatestPos() returns Latest main player pos examples will be there later
+
+World = GetWorld()
+World:GetPlayers() returns players at world
+World:GetObjects() returns objects
+
+inv = GetInventory()
+inv:GetItems() returns main player items
+
+HitTile(x, y) punch to x, y direction
+PlaceTile(x, y) place to x, y direction
+WrenchTile(x, y) wrench to x, y direction
 ```
 
 Misc tab:
 --
 ```
 Tools Tab:
+ServerIP info
+Port info
+UID info
+
 Login spoof
 Custom flag
 Spoof to a server 
 Windows Spoof 
 Random name Spoof
+
 Database:
 there item database
+
+Mod Checker:
+Checks online mods and shows
 ```
 
 Multibot tab:
@@ -79,11 +118,18 @@ Generate Account
 World tab:
 --
 ```
-Shows Players and their infos
+Player's:
+NetID
+UserID
+Posx, Posy
+Mod mod or not
+
+GrowScan:
+Not Finished
 ```
 
 Debug tab:
 --
 ```
-Shows game logs but need add filters
+added some basic things but not still good
 ```
