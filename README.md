@@ -1,3 +1,4 @@
+## POFWARE Documentation
 [Discord](https://discord.gg/tEZ49jPkfx)
 
 * [Bot Docs](https://github.com/iProB1/POFWARE-Docs/blob/main/bot-luadocs.md)
