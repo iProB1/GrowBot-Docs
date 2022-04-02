@@ -75,6 +75,9 @@ PathFind(posx, posy)
 Reconnect()
 GetLocal()
 LatestPos() returns Latest main player pos examples will be there later
+AddHook(type, hook name, function) adds hook
+RemoveHook(hook name) Removes Hook
+RemoveHooks() removes all hooks
 
 World = GetWorld()
 World:GetPlayers() returns players at world
