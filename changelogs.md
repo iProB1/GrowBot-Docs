@@ -1,9 +1,10 @@
-POFWARE 0.12
+POFWARE 0.15
 -------------------
 
 General:
 --
 ```
+Added Real Server Long Place/Punch
 Added enet proxy cmd features etc
 Added Discord RPC
 Added Rank System and Auth
@@ -17,11 +18,15 @@ Cheats tab:
 --
 ```
 Main:
-Pathfinder
+
+PathFinder
 Auto Collect
+Auto Punch Player Can customize far (no bans)
 tp to item
 Ghost
 Raw Packet Blocker
+Anti Punch
+Anti Ghost
 Click TP
 Nazi Smoke
 dance move
@@ -29,6 +34,8 @@ System speed
 blink color
 Nick
 Typer
+Long Place/Punch
+Dice/Roshambo Speed
 
 visual:
 Visual Spin
