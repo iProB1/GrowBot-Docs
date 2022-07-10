@@ -1,4 +1,4 @@
-## Private Shift Client Documentation
+## Shift Client Documentation
 [Shift Client Discord](https://discord.gg/8S5eBJ4cBN)
 
 - POFWARE Discontinued!
