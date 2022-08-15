@@ -1,5 +1,7 @@
-## Shift Client Documentation
-[Shift Client Discord](https://discord.gg/8S5eBJ4cBN)
+## NuclearBot Documentation
+* [NuclearBot Backup Discord](https://discord.gg/KMKpTZ7kUr)
+* [NuclearBot Discord]{https://discord.gg/hu7CjP5meZ)
 
-- POFWARE Discontinued!
-* [FAQ](https://github.com/iProB1/Shift-Docs/blob/main/faq.md)
+
+## scripts
+*
