@@ -1,4 +1,4 @@
-## NuclearBot Documentation
+## GrowtopiaBot Documentation
 * [Server](https://discord.gg/KMKpTZ7kUr)
 
 
