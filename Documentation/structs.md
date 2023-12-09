@@ -15,6 +15,8 @@
 * [tile_t](#tile_t)
 * [object_t](#object_t)
 * [bool_types](#bool_types)
+* [GamePacket](#gamepacket)
+* [variant_list](#variant_list)
 
 
 ## bot_t
@@ -179,3 +181,46 @@
 |:-----|:----:|:-----------|
 | Integer | `AA` | AA |
 | Integer | `BB` | BB |
+
+## GamePacket
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| Integer | `type` | Packet type |
+| Integer | ` objtype` | Packet object type |
+| Integer | `count1 ` | Packet count1 |
+| Integer | `count2 ` | Packet count2 |
+| Integer | `netid ` | Packet netid |
+| Integer | `item ` | Packet item |
+| Integer | `flags ` | Packet flags |
+| Integer | `float1` | Packet float1 |
+| Integer | `int_data` | Packet int_data |
+| Integer | `pos_x` | Packet pos x |
+| Integer | `pos_y` | Packet pos y |
+| Integer | `pos2_x` | Packet pos2 x |
+| Integer | `pos2_y` | Packet pos2 y |
+| Integer | `float2` | Packet float2 |
+| Integer | `tile_x` | Packet tile x |
+| Integer | `tile_y` | Packet tile y |
+| Integer | `int_x` | Packet int x |
+| Integer | `int_y` | Packet int y |
+
+## variant_list
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| Integer | `netid` | NetID |
+| Integer | `delay` | Delay |
+| String | `[0]` | Variant function name |
+| Any | `[1]` | Param 1 |
+| Any | `[2]` | Param 2 |
+| Any | `[3]` | Param 3 |
+| Any | `[4]` | Param 4 |
+| Any | `[5]` | Param 5 |
+
+## item_info_t
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| String | `name` | Item name |
+| Integer | `id` | Item ID |
+| Integer | `rarity` | Item rarity |
+| Integer | `growtime` | Item growtime |
+| Integer | `breakhits` | Item breakhits |
