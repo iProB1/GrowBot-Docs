@@ -1,0 +1,181 @@
+# Structs
+* [bot_t](#bot_t)
+* [local_t](#local_t)
+* [world_t](#world_t)
+* [npc_t](#npc_t)
+* [net_avatar_t](#net_avatar_t)
+* [world_tile_map_t](#world_tile_map_t)
+* [world_object_map_t](#world_object_map_t)
+* [clothes_t](#clothes_t)
+* [inventory_item_t](#inventory_item_t)
+* [player_items_t](#player_items_t)
+* [item_info_t](#item_info_t)
+* [vec2](#vec2)
+* [vec3](#vec3)
+* [tile_t](#tile_t)
+* [object_t](#object_t)
+* [bool_types](#bool_types)
+
+
+## bot_t
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| [local_t](#local_t) | `getLocal()` | Gets local struct |
+| [world_t](#world_t) | `getWorld()` | Gets world struct |
+| [player_items_t](#player_items_t) | `getInventory()` | Gets inventory struct |
+| [bool_types](#bool_types) | `set_bool(bool_types, boolean true/false)` | Sets bool_types true/false |
+
+## local_t
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| String | `name` | Player's name |
+| String | `country` | Player's flag id |
+| String | `platform` | Player's platform (IOS/WINDOWS/ANDROID) |
+| String | `chats` | Player's chatting data |
+| Integer | `netid` | Player's netID |
+| Integer | `userid` | Player's userID |
+| Bool | `facing_left` | Is player facing left |
+| Bool | `admin` | Is player world admin |
+| Bool | `owner` | Is player world owner |
+| Bool | `invis` | Is player invis |
+| Bool | `mod` | Is player mod |
+| [vec2](#vec2) | `punchpos`  | Player's punch position |
+| [vec2](#vec2) | `pos`  | Player's position |
+| [vec2](#vec2) | `tile` | Player's tile position |
+| [clothes_t](#clothes_t) | `getClothes()` | Gets clothes struct |
+| [player_items_t](#player_items_t) | `getInventory()` | Gets inventory struct |
+
+## world_t
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| String | `name` | World's name |
+| Integer | `country` | World owner's userid |
+| String | `owner_name` | World owner's name |
+| Bool | `connected` | Is connected to world |
+| Integer | `players_count` | World player's count |
+| Integer | `userid` | Player's userID |
+| Bool | `access` | Is player world access |
+| [npc_t](#npc_t) | `getNpcs()` | Gets world ghosts |
+| [net_avatar_t](#net_avatar_t) | `getPlayers()` | Gets world players |
+| [world_tile_map_t](#world_tile_map_t) | `getTileMap()` | Gets world tile_map struct |
+| [world_object_map_t](#world_object_map_t) | `getObjectMap()` | Gets world object_map struct |
+
+## npc_t
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| Integer | `id` | npc id |
+| Integer | `type` | npc type |
+| [vec2](#vec2) | `pos`  | npc's position |
+| [vec2](#vec2) | `targetpos`  | npc's target position |
+
+## net_avatar_t
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| String | `name` | Player's name |
+| String | `country` | Player's flag id |
+| String | `platform` | Player's platform (IOS/WINDOWS/ANDROID) |
+| String | `chats` | Player's chatting data |
+| Integer | `netid` | Player's netID |
+| Integer | `userid` | Player's userID |
+| Bool | `facing_left` | Is player facing left |
+| Bool | `admin` | Is player world admin |
+| Bool | `owner` | Is player world owner |
+| Bool | `invis` | Is player invis |
+| Bool | `mod` | Is player mod |
+| [vec2](#vec2) | `punchpos`  | Player's punch position |
+| [vec2](#vec2) | `pos`  | Player's position |
+| [vec2](#vec2) | `tile` | Player's tile position |
+| [clothes_t](#clothes_t) | `getClothes()` | Gets clothes struct |
+
+## world_tile_map_t
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| [vec2](#vec2) | `size` | World size |
+| Integer | `count` | World tile count |
+| [tile_t](#tile_t) | `getTiles()` | Gets tiles |
+| [tile_t](#tile_t) | `getTile(Integer id)` | Gets tile |
+
+## world_object_map_t
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| Integer | `count` | Object count |
+| Integer | `drop_id` | Object map latest drop_id |
+| [object_t](#object_t) | `getObjects()` | Gets objects |
+| [object_t](#object_t) | `getObject(vec2 tile)` | Gets object |
+| [object_t](#object_t) | `getObject(Integer x, Integer y)` | Gets object |
+| [object_t](#object_t) | `getObject(Integer oid)` | Gets object |
+| [object_t](#object_t) | `getObject(Integer id)` | Gets object |
+
+## clothes_t
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| Integer | `hat` | Player's hat |
+| Integer | `shirt` | Player's shirt |
+| Integer | `pant` | Player's pant |
+| Integer | `feet` | Player's feet |
+| Integer | `face` | Player's face |
+| Integer | `hand` | Player's hand |
+| Integer | `wing` | Player's wing |
+| Integer | `hair` | Player's hair |
+| Integer | `chest` | Player's chest |
+| Integer | `skin` | Player's skin |
+| Integer | `artifact` | Player's artifact |
+| String | `transmutate` | Player's transmutate |
+| [vec3](#vec3) | `role_skin`  | Player's role_skin |
+
+## inventory_item_t
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| Integer | `id` | Item id |
+| Integer | `amount` | Item amount | same thing
+| Integer | `count` | Item count | same thing
+| Bool | `wearing` | true/false |
+| Bool | `wearable` | true/false |
+
+## player_items_t
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| Bool | `itemExist(Integer id)` | Is item exist |
+| [inventory_item_t](#inventory_item_t) | `getItems()` | Gets items |
+| [inventory_item_t](#inventory_item_t) | `getItem(Integer id)` | Gets item |
+
+## vec2
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| Integer | `x` | Position x |
+| Integer | `y` | Position y |
+
+## vec3
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| Integer | `x` | Position x |
+| Integer | `y` | Position y |
+| Integer | `z` | Position z |
+
+## tile_t
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| Integer | `foreground` | Tile foreground |
+| Integer | `background` | Tile background |
+| Integer | `parent_tile` | Tile parent_tile |
+| Integer | `flag` | Tile flag |
+| Integer | `lock_parent_tile` | Tile lock_parent_tile |
+| [vec2](#vec2) | `pos` | Tile's position |
+| [tile_extra_t](#tile_extra_t) | `getTileExtra()` | Gets tile extra |
+
+## object_t
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| Integer | `id` | Object's id |
+| Integer | `amount` | Object's amount |  same thing
+| Integer | `count` | Object's count |  same thing
+| Integer | `flags` | Object's flags |
+| Integer | `oid` | Object's oid |
+| [vec2](#vec2) | `pos` | Object's position |
+| [vec2](#vec2) | `tile_pos` | Object's tile position |
+
+## bool_types
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| Integer | `AA` | AA |
+| Integer | `BB` | BB |
