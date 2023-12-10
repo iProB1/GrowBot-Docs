@@ -9,6 +9,7 @@
 * [clothes_t](#clothes_t)
 * [inventory_item_t](#inventory_item_t)
 * [player_items_t](#player_items_t)
+* [item_t](#item_t)
 * [item_info_t](#item_info_t)
 * [vec2](#vec2)
 * [vec3](#vec3)
@@ -129,8 +130,7 @@
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | Integer | `id` | Item id |
-| Integer | `amount` | Item amount | same thing
-| Integer | `count` | Item count | same thing
+| Integer | `count or amount` | Item count |
 | Bool | `wearing` | true/false |
 | Bool | `wearable` | true/false |
 
@@ -138,8 +138,10 @@
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | Bool | `itemExist(Integer id)` | Is item exist |
-| [inventory_item_t](#inventory_item_t) | `getItems()` | Gets items |
-| [inventory_item_t](#inventory_item_t) | `getItem(Integer id)` | Gets item |
+| Integer | `getItemCount(Integer id or String name) or findItem(Integer id or String name)`| Returns the InventoryItem count with the specified item ID. It returns 0 if not found. |
+| [inventory_item_t](#inventory_item_t) | `can_collect(Integer id) -> boolean` | Returns true if the player can collect the item with the specified item ID, false otherwise. |
+| [inventory_item_t](#inventory_item_t) | `getItems()` | Returns a table containing all the inventory_item_t objects in the inventory. |
+| [inventory_item_t](#inventory_item_t) | `getItem(Integer id)` | Returns the inventory_item_t with the specified item ID. It returns nil if not found. |
 
 ## vec2
 | Type | Name | Description|
@@ -169,8 +171,7 @@
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | Integer | `id` | Object's id |
-| Integer | `amount` | Object's amount |  same thing
-| Integer | `count` | Object's count |  same thing
+| Integer | `count or amount` | Object's count |
 | Integer | `flags` | Object's flags |
 | Integer | `oid` | Object's oid |
 | [vec2](#vec2) | `pos` | Object's position |
@@ -216,7 +217,7 @@
 | Any | `[4]` | Param 4 |
 | Any | `[5]` | Param 5 |
 
-## item_info_t
+## item_t
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | String | `name` | Item name |
@@ -224,3 +225,11 @@
 | Integer | `rarity` | Item rarity |
 | Integer | `growtime` | Item growtime |
 | Integer | `breakhits` | Item breakhits |
+| Bool | `entrance` | Is item entrance |
+| Bool | `toggleable` | Is item toggleable |
+
+
+## item_info_t
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| [item_t](#item_t) | `getItem(Integer id or String name) or getInfo(Integer id or String name)` | Gets item by id and name |
