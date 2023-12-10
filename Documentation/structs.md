@@ -18,6 +18,7 @@
 * [bool_types](#bool_types)
 * [GamePacket](#gamepacket)
 * [variant_list](#variant_list)
+* [tile_extra_t](#tile_extra_t)
 
 
 ## bot_t
@@ -233,3 +234,15 @@
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | [item_t](#item_t) | `getItemInfo(Integer id or String name) or getInfo(Integer id or String name)` | Gets item by id and name |
+true/false |
+
+## tile_extra_t
+| Type | Name | Description|
+|:-----|:----:|:-----------|
+| Table | `Door` | Returns table tile extra door |
+| Table | `Sign` | Returns table tile extra sign |
+| Table | `Lock` | Returns table tile extra lock |
+| Table | `Seed` | Returns table tile extra seed |
+| Table | `Dice` | Returns table tile extra dice |
+| Table | `Display_Block` | Returns table tile extra display block |
+| Table | `Vending` | Returns table tile extra vending |
