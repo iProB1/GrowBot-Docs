@@ -232,4 +232,4 @@
 ## item_info_t
 | Type | Name | Description|
 |:-----|:----:|:-----------|
-| [item_t](#item_t) | `getItem(Integer id or String name) or getInfo(Integer id or String name)` | Gets item by id and name |
+| [item_t](#item_t) | `getItemInfo(Integer id or String name) or getInfo(Integer id or String name)` | Gets item by id and name |
