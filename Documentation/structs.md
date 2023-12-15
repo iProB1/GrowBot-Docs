@@ -226,9 +226,8 @@
 | Integer | `rarity` | Item rarity |
 | Integer | `growtime` | Item growtime |
 | Integer | `breakhits` | Item breakhits |
-| Bool | `entrance` | Is item entrance |
-| Bool | `toggleable` | Is item toggleable |
-
+| Integer | `clothingtype` | Item clothingtype |
+| Integer | `collisiontype` | Item collisionType |
 
 ## item_info_t
 | Type | Name | Description|
