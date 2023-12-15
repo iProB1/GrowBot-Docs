@@ -41,9 +41,7 @@
 | Bool | `facing_left` | Is player facing left |
 | Bool | `admin` | Is player world admin |
 | Bool | `owner` | Is player world owner |
-| Bool | `invis` | Is player invis |
-| Bool | `mod` | Is player mod |
-| [vec2](#vec2) | `punchpos`  | Player's punch position |
+| [vec2](#vec2) | `target_pos`  | Player's punch position |
 | [vec2](#vec2) | `pos`  | Player's position |
 | [vec2](#vec2) | `tile` | Player's tile position |
 | [clothes_t](#clothes_t) | `getClothes()` | Gets clothes struct |
@@ -85,7 +83,7 @@
 | Bool | `owner` | Is player world owner |
 | Bool | `invis` | Is player invis |
 | Bool | `mod` | Is player mod |
-| [vec2](#vec2) | `punchpos`  | Player's punch position |
+| [vec2](#vec2) | `target_pos`  | Player's punch position |
 | [vec2](#vec2) | `pos`  | Player's position |
 | [vec2](#vec2) | `tile` | Player's tile position |
 | [clothes_t](#clothes_t) | `getClothes()` | Gets clothes struct |
