@@ -53,12 +53,11 @@
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | String | `name` | World's name |
-| Integer | `country` | World owner's userid |
+| Integer | `owner_id` | World owner's userid |
 | String | `owner_name` | World owner's name |
 | Bool | `connected` | Is connected to world |
-| Integer | `players_count` | World player's count |
-| Integer | `userid` | Player's userID |
 | Bool | `access` | Is player world access |
+| Integer | `getPlayersCount()` | World player's count |
 | [npc_t](#npc_t) | `getNpcs()` | Gets world ghosts |
 | [net_avatar_t](#net_avatar_t) | `getPlayers()` | Gets world players |
 | [world_tile_map_t](#world_tile_map_t) | `getTileMap()` | Gets world tile_map struct |
