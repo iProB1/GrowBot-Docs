@@ -32,7 +32,7 @@ getBot():SendPacketRaw(packet)
 ```lua
 -- Sends wear clothing packet
 bot = getBot()
-packet = {}
+packet = GamePacket()
 packet.type = 10 
 packet.int_data = 48 -- Item ID (Jeans)
 bot:sendPacketRaw(packet)
