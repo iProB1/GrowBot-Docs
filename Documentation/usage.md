@@ -1,13 +1,6 @@
 # Usage
 * [GamePacket](#GamePacket)
 
-```lua
--- Sends wear clothing packet to server
-packet = {}
-packet.type = 10 
-packet.int_data = 48 -- Clothing ID (Jeans)
-sendPacketRaw(false, packet)
-```
 ## GamePacket
 
 Sends [GamePacket](structs.md#GamePacket) to server.
