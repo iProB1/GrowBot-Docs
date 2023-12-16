@@ -18,7 +18,7 @@ bots2 = getBots() -- gets all bots
 
 Sends [GamePacket](structs.md#GamePacket) to server.
 
-used structs [vec2i](structs.md#vec2i), [vec2f](structs.md#vec2f), [packet_types](structs.md#packet_types)
+used structs [vec2i](structs.md#vec2i), [vec2f](structs.md#vec2f), [packet_types](structs.md#packet_types), [packet_flags](structs.md#packet_flags)
 
 Examples:
 ```lua
@@ -30,7 +30,7 @@ packet.count1 = 42
 packet.count2 = 64
 packet.netid = 123
 packet.item = 456
-packet.flags = 789
+packet.flags = PacketFlag.none -- or you can write 0
 packet.float1 = 3.14
 packet.int_data = 987
 packet.pos = vec2f(10.3, 30.2)
