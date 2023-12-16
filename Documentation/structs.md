@@ -25,23 +25,21 @@
 ## bot
 | Type | Name | Description|
 |:-----|:----:|:-----------|
-| String | `name` | Player's name |
-| String | `country` | Player's flag id |
-| String | `platform` | Player's platform (IOS/WINDOWS/ANDROID) |
-| String | `chats` | Player's chatting data |
-| Integer | `netid` | Player's netID |
-| Integer | `userid` | Player's userID |
+| String | `name` | Bot's name |
+| String | `country` | Bot's flag id |
+| String | `chats` | Bot's chatting data |
+| Integer | `netid` | Bot's netID |
+| Integer | `userid` | Bot's userID |
 | Bool | `facing_left` | Is player facing left |
-| Bool | `admin` | Is player world admin |
-| Bool | `owner` | Is player world owner |
-| [vec2](#vec2) | `target_pos`  | Player's punch position |
-| [vec2](#vec2) | `pos`  | Player's position |
-| [vec2](#vec2) | `tile` | Player's tile position |
-| [clothes](#clothes) | `getClothes()` | Gets clothes struct |
-| [player_items](#player_items) | `getInventory()` | Gets inventory struct |
-| [world](#world) | `getWorld()` | Gets world struct |
-| [player_items](#player_items) | `getInventory()` | Gets inventory struct |
-| [boolypes](#boolypes) | `set_bool(boolypes, boolean true/false)` | Sets boolypes true/false |
+| Bool | `admin` | Is bot world admin |
+| Bool | `owner` | Is bot world owner |
+| [vec2](#vec2) | `target_pos`  | Bot's punch position |
+| [vec2](#vec2) | `pos`  | Bot's position |
+| [vec2](#vec2) | `tile` | Bot's tile position |
+| [clothes](#clothes) | `getClothes()` | Gets bot's clothes struct |
+| [player_items](#player_items) | `getInventory()` | Gets bot's inventory struct |
+| [world](#world) | `getWorld()` | Gets bot's world struct |
+| [player_items](#player_items) | `getInventory()` | Gets bot's inventory struct |
 
 ## world
 | Type | Name | Description|
