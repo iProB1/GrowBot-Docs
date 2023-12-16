@@ -14,7 +14,7 @@ bots2 = getBots() -- gets all bots
 ```
 
 Sending packet:
-`sendPacket(int type, std::string)`
+`sendPacket(int type, std::string packet)`
 ```lua
 -- sends respawn packet
 bot = getBot()
