@@ -50,6 +50,7 @@
 | Function | `collect(int range, int itemid)` | Collects specific item in a specific range |
 | Function | `SendPacket(int type, std::string packet)` | Sends packet |
 | [GamePacket](#GamePacket) Function | `SendPacketRaw(GamePacket Packet)` | Sends packet raw |
+| [inventory_item](#inventory_item) Function | `findItem(int itemid)` | Finds item in inventory and returns it |
 | [clothes](#clothes) Function | `getClothes()` | Gets bot's clothes struct |
 | [player_items](#player_items) Function | `getInventory()` | Gets bot's inventory struct |
 | [world](#world) Function | `getWorld()` | Gets bot's world struct |
