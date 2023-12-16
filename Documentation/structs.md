@@ -242,50 +242,50 @@ true/false |
 ## packet_types
 | Type    | Name                  | Description                    |
 |:-------:|:---------------------:|:-------------------------------|
-| Integer | `State`               | `PacketType.State` - `0`             |
-| Integer | `CallFunction`        | `PacketType.CallFunction`      |
-| Integer | `UpdateStatus`        | `PacketType.UpdateStatus`      |
-| Integer | `TileChangeRequest`   | `PacketType.TileChangeRequest` |
-| Integer | `SendMapData`         | `PacketType.SendMapData`       |
-| Integer | `SendTileUpdateData`  | `PacketType.SendTileUpdateData`|
-| Integer | `SendTileUpdateDataMultiple` | `PacketType.SendTileUpdateDataMultiple` |
-| Integer | `TileActivateRequest` | `PacketType.TileActivateRequest`|
-| Integer | `TileApplyDamage`     | `PacketType.TileApplyDamage`   |
-| Integer | `SendInventoryState`  | `PacketType.SendInventoryState`|
-| Integer | `ItemActivateRequest` | `PacketType.ItemActivateRequest`|
-| Integer | `ItemActivateObjectRequest` | `PacketType.ItemActivateObjectRequest` |
-| Integer | `SendTileTreeState`   | `PacketType.SendTileTreeState` |
-| Integer | `ModifyItemInventory` | `PacketType.ModifyItemInventory` |
-| Integer | `ItemChangeObject`    | `PacketType.ItemChangeObject`  |
-| Integer | `SendLock`            | `PacketType.SendLock`           |
-| Integer | `SendItemDatabaseData`| `PacketType.SendItemDatabaseData`|
-| Integer | `SendParticleEffect`  | `PacketType.SendParticleEffect` |
-| Integer | `SetIconState`        | `PacketType.SetIconState`       |
-| Integer | `ItemEffect`          | `PacketType.ItemEffect`         |
-| Integer | `SetCharacterState`   | `PacketType.SetCharacterState`  |
-| Integer | `PingReply`           | `PacketType.PingReply`          |
-| Integer | `PingRequest`         | `PacketType.PingRequest`        |
-| Integer | `GotPunched`          | `PacketType.GotPunched`         |
-| Integer | `AppCheckResponse`    | `PacketType.AppCheckResponse`   |
-| Integer | `AppIntegrityFail`    | `PacketType.AppIntegrityFail`   |
-| Integer | `Disconnect`          | `PacketType.Disconnect`         |
-| Integer | `BattleJoin`          | `PacketType.BattleJoin`         |
-| Integer | `BattleEvent`         | `PacketType.BattleEvent`        |
-| Integer | `UseDoor`             | `PacketType.UseDoor`            |
-| Integer | `SendParental`        | `PacketType.SendParental`       |
-| Integer | `GoneFishin`          | `PacketType.GoneFishin`         |
-| Integer | `Steam`               | `PacketType.Steam`              |
-| Integer | `PetBattle`           | `PacketType.PetBattle`          |
-| Integer | `NPC`                 | `PacketType.NPC`                |
-| Integer | `Special`             | `PacketType.Special`            |
-| Integer | `SendParticleEffectV2`| `PacketType.SendParticleEffectV2` |
-| Integer | `ActiveArrowToItem`   | `PacketType.ActiveArrowToItem`  |
-| Integer | `SelectTileIndex`     | `PacketType.SelectTileIndex`    |
-| Integer | `SendPlayerTributeData`| `PacketType.SendPlayerTributeData` |
-| Integer | `SetQuickSlotItem`    | `PacketType.SetQuickSlotItem`   |
-| Integer | `PvENPC`              | `PacketType.PvENPC`             |
-| Integer | `PvPCardBattleEvent`  | `PacketType.PvPCardBattleEvent` |
-| Integer | `PvEPlayerDamage`     | `PacketType.PvEPlayerDamage`    |
-| Integer | `PvENPCState`         | `PacketType.PvENPCState`        |
-| Integer | `SetExtraMods`        | `PacketType.SetExtraMods`       |
-| Integer | `OnStepOnTileMod`     | `PacketType.OnStepOnTileMod`    |
+| Integer | `State`               | `PacketType.State` - `0`       |
+| Integer | `CallFunction`        | `PacketType.CallFunction` - `1`|
+| Integer | `UpdateStatus`        | `PacketType.UpdateStatus` - `2`|
+| Integer | `TileChangeRequest`   | `PacketType.TileChangeRequest` - `3`|
+| Integer | `SendMapData`         | `PacketType.SendMapData` - `4` |
+| Integer | `SendTileUpdateData`  | `PacketType.SendTileUpdateData` - `5`|
+| Integer | `SendTileUpdateDataMultiple` | `PacketType.SendTileUpdateDataMultiple` - `6` |
+| Integer | `TileActivateRequest` | `PacketType.TileActivateRequest` - `7`|
+| Integer | `TileApplyDamage`     | `PacketType.TileApplyDamage` - `8`|
+| Integer | `SendInventoryState`  | `PacketType.SendInventoryState` - `9`|
+| Integer | `ItemActivateRequest` | `PacketType.ItemActivateRequest` - `10`|
+| Integer | `ItemActivateObjectRequest` | `PacketType.ItemActivateObjectRequest` - `11` |
+| Integer | `SendTileTreeState`   | `PacketType.SendTileTreeState` - `12`|
+| Integer | `ModifyItemInventory` | `PacketType.ModifyItemInventory` - `13`|
+| Integer | `ItemChangeObject`    | `PacketType.ItemChangeObject` - `14` |
+| Integer | `SendLock`            | `PacketType.SendLock` - `15`    |
+| Integer | `SendItemDatabaseData`| `PacketType.SendItemDatabaseData` - `16`|
+| Integer | `SendParticleEffect`  | `PacketType.SendParticleEffect` - `17`|
+| Integer | `SetIconState`        | `PacketType.SetIconState` - `18`|
+| Integer | `ItemEffect`          | `PacketType.ItemEffect` - `19` |
+| Integer | `SetCharacterState`   | `PacketType.SetCharacterState` - `20`|
+| Integer | `PingReply`           | `PacketType.PingReply` - `21`  |
+| Integer | `PingRequest`         | `PacketType.PingRequest` - `22`|
+| Integer | `GotPunched`          | `PacketType.GotPunched` - `23`|
+| Integer | `AppCheckResponse`    | `PacketType.AppCheckResponse` - `24`|
+| Integer | `AppIntegrityFail`    | `PacketType.AppIntegrityFail` - `25`|
+| Integer | `Disconnect`          | `PacketType.Disconnect` - `26`|
+| Integer | `BattleJoin`          | `PacketType.BattleJoin` - `27`|
+| Integer | `BattleEvent`         | `PacketType.BattleEvent` - `28`|
+| Integer | `UseDoor`             | `PacketType.UseDoor` - `29`    |
+| Integer | `SendParental`        | `PacketType.SendParental` - `30`|
+| Integer | `GoneFishin`          | `PacketType.GoneFishin` - `31`|
+| Integer | `Steam`               | `PacketType.Steam` - `32`      |
+| Integer | `PetBattle`           | `PacketType.PetBattle` - `33`  |
+| Integer | `NPC`                 | `PacketType.NPC` - `34`        |
+| Integer | `Special`             | `PacketType.Special` - `35`    |
+| Integer | `SendParticleEffectV2`| `PacketType.SendParticleEffectV2` - `36` |
+| Integer | `ActiveArrowToItem`   | `PacketType.ActiveArrowToItem` - `37`|
+| Integer | `SelectTileIndex`     | `PacketType.SelectTileIndex` - `38`|
+| Integer | `SendPlayerTributeData`| `PacketType.SendPlayerTributeData` - `39` |
+| Integer | `SetQuickSlotItem`    | `PacketType.SetQuickSlotItem` - `40`|
+| Integer | `PvENPC`              | `PacketType.PvENPC` - `41`    |
+| Integer | `PvPCardBattleEvent`  | `PacketType.PvPCardBattleEvent` - `42`|
+| Integer | `PvEPlayerDamage`     | `PacketType.PvEPlayerDamage` - `43`|
+| Integer | `PvENPCState`         | `PacketType.PvENPCState` - `44`|
+| Integer | `SetExtraMods`        | `PacketType.SetExtraMods` - `45`|
+| Integer | `OnStepOnTileMod`     | `PacketType.OnStepOnTileMod` - `46`|
