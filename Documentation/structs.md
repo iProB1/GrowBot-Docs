@@ -87,7 +87,8 @@
 | [vec2](#vec2) | `size` | World size |
 | Integer | `count` | World tile count |
 | [tile](#tile) | `getTiles()` | Gets tiles |
-| [tile](#tile) | `getTile(Integer id)` | Gets tile |
+| [tile](#tile) | `getTileByID(Integer id)` | Gets tile |
+| [tile](#tile) | `getTile(Integer x, Integer y)` | Gets tile |
 
 ## world_object_map
 | Type | Name | Description|
@@ -95,10 +96,9 @@
 | Integer | `count` | Object count |
 | Integer | `drop_id` | Object map latest drop_id |
 | [object](#object) | `getObjects()` | Gets objects |
-| [object](#object) | `getObject(vec2 tile)` | Gets object |
 | [object](#object) | `getObject(Integer x, Integer y)` | Gets object |
-| [object](#object) | `getObject(Integer oid)` | Gets object |
-| [object](#object) | `getObject(Integer id)` | Gets object |
+| [object](#object) | `getObjectByOID(Integer oid)` | Gets object |
+| [object](#object) | `getObjectByID(Integer id)` | Gets object |
 
 ## clothes
 | Type | Name | Description|
