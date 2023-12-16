@@ -242,7 +242,7 @@ true/false |
 ## packet_types
 | Type    | Name                  | Description                    |
 |:-------:|:---------------------:|:-------------------------------|
-| Integer | `State`               | `PacketType.State`             |
+| Integer | `State`               | `PacketType.State` - `0`             |
 | Integer | `CallFunction`        | `PacketType.CallFunction`      |
 | Integer | `UpdateStatus`        | `PacketType.UpdateStatus`      |
 | Integer | `TileChangeRequest`   | `PacketType.TileChangeRequest` |
