@@ -35,6 +35,55 @@ bot:sendPacketRaw(packet)
 -- can use SendPacketRaw
 ```
 
+Wear:
+`Wear(int itemid)`
+```lua
+-- if have item in inventory wears
+bot = getBot()
+bot:Wear(48)
+-- can use wear
+```
+
+Punch/Hit:
+`Punch(int x, int y)`
+```lua
+-- punchs to tile position
+bot = getBot()
+bot_tile_pos = bot:getLocal().tile
+bot:Punch(bot_tile_pos.x + 1, bot_tile_pos) -- punchs to right tile
+-- can use punch, Hit, hit
+```
+
+Place:
+`Place(int itemid, int x, int y)`
+```lua
+-- places to tile position
+bot = getBot()
+bot_tile_pos = bot:getLocal().tile
+bot:place(2, bot_tile_pos.x + 1, bot_tile_pos) -- places dirt to right tile
+-- can use place
+```
+
+Wrench:
+`Wrench(int x, int y)`
+```lua
+-- punchs to tile position
+bot = getBot()
+bot_tile_pos = bot:getLocal().tile
+bot:Wrench(32, bot_tile_pos.x + 1, bot_tile_pos) -- wrenchs to right tile
+-- can use wrench
+```
+
+findPath:
+`findPath(int x, int y)`
+```lua
+-- teleports to tile position
+bot = getBot()
+bot_tile_pos = bot:getLocal().tile
+bot:findPath(bot_tile_pos.x + 1, bot_tile_pos) -- teleports to right tile
+-- can use FindPath
+```
+
 ## GamePacket
 
 Sends [GamePacket](structs.md#GamePacket) to server.
