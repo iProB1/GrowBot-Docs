@@ -22,8 +22,6 @@ packet.pos = vec2f(10.3, 30.2)
 packet.pos2 = vec2f(1.5, 2.5)
 packet.float2 = 2.71
 packet.tile = vec2i(30, 40)
-packet.data_size = 5
-packet.data = 0
 getBot():SendPacketRaw(packet)
 
 -- can be used GetBot , sendPacketRaw
