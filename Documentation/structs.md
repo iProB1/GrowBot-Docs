@@ -36,9 +36,23 @@
 | [vec2](#vec2) | `target_pos`  | Bot's punch position |
 | [vec2](#vec2) | `pos`  | Bot's position |
 | [vec2](#vec2) | `tile` | Bot's tile position |
-| [clothes](#clothes) | `getClothes()` | Gets bot's clothes struct |
-| [player_items](#player_items) | `getInventory()` | Gets bot's inventory struct |
-| [world](#world) | `getWorld()` | Gets bot's world struct |
+| Function | `punch(int x, int y)` | Punchs to tile position |
+| Function | `place(int itemid, int x, int y)` | Places to tile position |
+| Function | `wrench(int x, int y)` | Wrenchs to tile position |
+| Function | `findPath(int x, int y)` | Teleports to tile position |
+| Function | `enter()` | Enter a door or portal |
+| Function | `wear(int itemid)` | Wear item |
+| Function | `drop(int itemid)` | Drop item |
+| Function | `trash(int itemid)` | Trash item |
+| Function | `drop(int itemid, int count)` | Drop specific count of an item |
+| Function | `trash(int itemid, int count)` | Trash specific count of an item |
+| Function | `collect(int range)` | Collect items in a specific range |
+| Function | `collect(int range, int itemid)` | Collects specific item in a specific range |
+| Function | `SendPacket(int type, std::string packet)` | Sends packet |
+| [GamePacket](#GamePacket) Function | `SendPacketRaw(GamePacket Packet)` | Sends packet raw |
+| [clothes](#clothes) Function | `getClothes()` | Gets bot's clothes struct |
+| [player_items](#player_items) Function | `getInventory()` | Gets bot's inventory struct |
+| [world](#world) Function | `getWorld()` | Gets bot's world struct |
 
 ## world
 | Type | Name | Description|
