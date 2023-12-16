@@ -1,5 +1,5 @@
 ## GrowtopiaBot Documentation
-* [Server](https://discord.gg/KMKpTZ7kUr)
+* [Discord Server](https://discord.gg/KMKpTZ7kUr)
 * [Documentation](https://github.com/iProB1/GrowBot-Docs/blob/main/Documentation/README.md)
 
 ## example-scripts
