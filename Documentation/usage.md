@@ -31,6 +31,7 @@ packet = GamePacket()
 packet.type = PacketType.ItemActivateRequest -- or you can write 10
 packet.int_data = 48 -- Item ID (Jeans)
 bot:sendPacketRaw(packet)
+-- can use SendPacketRaw
 ```
 
 ## GamePacket
