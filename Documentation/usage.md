@@ -49,8 +49,7 @@ Punch/Hit:
 ```lua
 -- punchs to tile position
 bot = getBot()
-bot_tile_pos = bot:getLocal().tile
-bot:Punch(bot_tile_pos.x + 1, bot_tile_pos.y) -- punchs to right tile
+bot:Punch(bot.tile.x + 1, bot.tile.y) -- punchs to right tile
 -- can use punch, Hit, hit
 ```
 
@@ -59,8 +58,7 @@ Place:
 ```lua
 -- places to tile position
 bot = getBot()
-bot_tile_pos = bot:getLocal().tile
-bot:Place(2, bot_tile_pos.x + 1, bot_tile_pos.y) -- places dirt to right tile
+bot:Place(2, bot.tile.x + 1, bot.tile.y) -- places dirt to right tile
 -- can use place
 ```
 
@@ -69,8 +67,7 @@ Wrench:
 ```lua
 -- punchs to tile position
 bot = getBot()
-bot_tile_pos = bot:getLocal().tile
-bot:Wrench(32, bot_tile_pos.x + 1, bot_tile_pos.y) -- wrenchs to right tile
+bot:Wrench(32, bot.tile.x + 1, bot.tile.y) -- wrenchs to right tile
 -- can use wrench
 ```
 
@@ -79,8 +76,7 @@ FindPath:
 ```lua
 -- teleports to tile position
 bot = getBot()
-bot_tile_pos = bot:getLocal().tile
-bot:FindPath(bot_tile_pos.x + 1, bot_tile_pos.y) -- teleports to right tile
+bot:FindPath(bot.tile.x + 1, bot.tile.y) -- teleports to right tile
 -- can use findPath
 ```
 
