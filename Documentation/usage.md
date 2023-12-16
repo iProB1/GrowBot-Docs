@@ -60,7 +60,7 @@ Place:
 -- places to tile position
 bot = getBot()
 bot_tile_pos = bot:getLocal().tile
-bot:place(2, bot_tile_pos.x + 1, bot_tile_pos) -- places dirt to right tile
+bot:Place(2, bot_tile_pos.x + 1, bot_tile_pos) -- places dirt to right tile
 -- can use place
 ```
 
@@ -74,14 +74,14 @@ bot:Wrench(32, bot_tile_pos.x + 1, bot_tile_pos) -- wrenchs to right tile
 -- can use wrench
 ```
 
-findPath:
-`findPath(int x, int y)`
+FindPath:
+`FindPath(int x, int y)`
 ```lua
 -- teleports to tile position
 bot = getBot()
 bot_tile_pos = bot:getLocal().tile
-bot:findPath(bot_tile_pos.x + 1, bot_tile_pos) -- teleports to right tile
--- can use FindPath
+bot:FindPath(bot_tile_pos.x + 1, bot_tile_pos) -- teleports to right tile
+-- can use findPath
 ```
 
 ## GamePacket
