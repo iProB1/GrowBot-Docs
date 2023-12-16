@@ -13,7 +13,7 @@ bots2 = getBots() -- gets all bots
 -- you can write like "GetBot ... etc" too  
 ```
 
-[bot](structs.md#bot) functions:
+### [bot](structs.md#bot) functions:
 Sending packet:
 `sendPacket(int type, std::string packet)`
 ```lua
