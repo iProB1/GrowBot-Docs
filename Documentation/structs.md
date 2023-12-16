@@ -39,7 +39,6 @@
 | [clothes](#clothes) | `getClothes()` | Gets bot's clothes struct |
 | [player_items](#player_items) | `getInventory()` | Gets bot's inventory struct |
 | [world](#world) | `getWorld()` | Gets bot's world struct |
-| [player_items](#player_items) | `getInventory()` | Gets bot's inventory struct |
 
 ## world
 | Type | Name | Description|
