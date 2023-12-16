@@ -14,7 +14,7 @@ bots2 = getBots() -- gets all bots
 ```
 
 ### [bot](structs.md#bot) functions:
-Sending packet:
+SendPacket:
 `sendPacket(int type, std::string packet)`
 ```lua
 -- sends respawn packet
@@ -23,7 +23,7 @@ bot:SendPacket(2, "action|respawn")
 -- can use sendPacket
 ```
 
-Sending packet raw using [GamePacket](structs.md#GamePacket):
+SendPacketRaw using [GamePacket](structs.md#GamePacket):
 `sendPacketRaw(GamePacket packet)`
 ```lua
 -- Sends wear clothing packet
