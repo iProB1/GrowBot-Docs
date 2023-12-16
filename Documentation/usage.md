@@ -50,7 +50,7 @@ Punch/Hit:
 -- punchs to tile position
 bot = getBot()
 bot_tile_pos = bot:getLocal().tile
-bot:Punch(bot_tile_pos.x + 1, bot_tile_pos) -- punchs to right tile
+bot:Punch(bot_tile_pos.x + 1, bot_tile_pos.y) -- punchs to right tile
 -- can use punch, Hit, hit
 ```
 
@@ -60,7 +60,7 @@ Place:
 -- places to tile position
 bot = getBot()
 bot_tile_pos = bot:getLocal().tile
-bot:Place(2, bot_tile_pos.x + 1, bot_tile_pos) -- places dirt to right tile
+bot:Place(2, bot_tile_pos.x + 1, bot_tile_pos.y) -- places dirt to right tile
 -- can use place
 ```
 
@@ -70,7 +70,7 @@ Wrench:
 -- punchs to tile position
 bot = getBot()
 bot_tile_pos = bot:getLocal().tile
-bot:Wrench(32, bot_tile_pos.x + 1, bot_tile_pos) -- wrenchs to right tile
+bot:Wrench(32, bot_tile_pos.x + 1, bot_tile_pos.y) -- wrenchs to right tile
 -- can use wrench
 ```
 
@@ -80,7 +80,7 @@ FindPath:
 -- teleports to tile position
 bot = getBot()
 bot_tile_pos = bot:getLocal().tile
-bot:FindPath(bot_tile_pos.x + 1, bot_tile_pos) -- teleports to right tile
+bot:FindPath(bot_tile_pos.x + 1, bot_tile_pos.y) -- teleports to right tile
 -- can use findPath
 ```
 
