@@ -185,7 +185,7 @@
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | Integer | `type` | Packet type |
-| Integer | ` objtype` | Packet object type |
+| Integer | `objtype` | Packet object type |
 | Integer | `count1 ` | Packet count1 |
 | Integer | `count2 ` | Packet count2 |
 | Integer | `netid ` | Packet netid |
@@ -193,15 +193,10 @@
 | Integer | `flags ` | Packet flags |
 | Integer | `float1` | Packet float1 |
 | Integer | `int_data` | Packet int_data |
-| Integer | `pos_x` | Packet pos x |
-| Integer | `pos_y` | Packet pos y |
-| Integer | `pos2_x` | Packet pos2 x |
-| Integer | `pos2_y` | Packet pos2 y |
+| [vec2f](#vec2f) | `pos` | Packet pos |
+| [vec2f](#vec2f) | `pos2` | Packet pos2 |
 | Integer | `float2` | Packet float2 |
-| Integer | `tile_x` | Packet tile x |
-| Integer | `tile_y` | Packet tile y |
-| Integer | `int_x` | Packet int x |
-| Integer | `int_y` | Packet int y |
+| [vec2i](#vec2i) | `tile` | Packet tile |
 
 ## variant_list
 | Type | Name | Description|
