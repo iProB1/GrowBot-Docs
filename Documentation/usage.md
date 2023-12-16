@@ -13,6 +13,25 @@ bots2 = getBots() -- gets all bots
 -- you can write like "GetBot ... etc" too  
 ```
 
+Sending packet:
+`sendPacket(int type, std::string)`
+```lua
+-- sends respawn packet
+bot = getBot()
+bot:SendPacket(2, "action|respawn")
+-- can use sendPacket
+```
+
+Sending packet raw using [GamePacket](structs.md#GamePacket):
+`sendPacketRaw(GamePacket packet)`
+```lua
+-- Sends wear clothing packet
+bot = getBot()
+packet = GamePacket()
+packet.type = PacketType.ItemActivateRequest -- or you can write 10
+packet.int_data = 48 -- Item ID (Jeans)
+bot:sendPacketRaw(packet)
+```
 
 ## GamePacket
 
@@ -40,13 +59,4 @@ packet.tile = vec2i(30, 40)
 getBot():SendPacketRaw(packet)
 
 -- can be used GetBot , sendPacketRaw
-```
-
-```lua
--- Sends wear clothing packet
-bot = getBot()
-packet = GamePacket()
-packet.type = PacketType.ItemActivateRequest -- or you can write 10
-packet.int_data = 48 -- Item ID (Jeans)
-bot:sendPacketRaw(packet)
 ```
