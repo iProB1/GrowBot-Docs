@@ -41,6 +41,8 @@
 | Function | `wrench(int x, int y)` | Wrenchs to tile position |
 | Function | `findPath(int x, int y)` | Teleports to tile position |
 | Function | `enter()` | Enter a door or portal |
+| Function | `warp(std::string world_name)` | Warp to world |
+| Function | `door(std::string doorid)` | Warps to world's door |
 | Function | `wear(int itemid)` | Wear item |
 | Function | `drop(int itemid)` | Drop item |
 | Function | `trash(int itemid)` | Trash item |
