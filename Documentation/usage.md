@@ -90,9 +90,9 @@ Sends [GamePacket](structs.md#GamePacket) to server.
 
 used structs [vec2i](structs.md#vec2i), [vec2f](structs.md#vec2f), [packet_types](structs.md#packet_types), [packet_flags](structs.md#packet_flags)
 
-### GamePacket Examples:
+### GamePacket Example:
 ```lua
--- it isn't doing anything
+-- it isn't doing anything just a example
 packet = GamePacket()
 packet.type = PacketType.State -- or you can write 0
 packet.objtype = 1
