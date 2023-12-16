@@ -1,5 +1,18 @@
 # Usage
+* [Bot](#Bot)
 * [GamePacket](#GamePacket)
+
+## Bot
+
+Getting [bot](structs.md#bot_t) types:
+```lua
+bot = getBot() -- or can be used getSelectedBot()
+bots = getSelectedBots() -- gets selected bots
+bots2 = getBots() -- gets all bots
+
+-- you can write like "GetBot ... etc" too  
+```
+
 
 ## GamePacket
 
