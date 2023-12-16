@@ -20,6 +20,7 @@
 * [variant_list](#variant_list)
 * [tile_extra](#tile_extra)
 * [packet_types](#packet_types)
+* [packet_flags](#packet_flags)
 
 
 ## bot
@@ -289,3 +290,48 @@ true/false |
 | Integer | `PvENPCState`         | `PacketType.PvENPCState` - `44`|
 | Integer | `SetExtraMods`        | `PacketType.SetExtraMods` - `45`|
 | Integer | `OnStepOnTileMod`     | `PacketType.OnStepOnTileMod` - `46`|
+
+## packet_flags
+| Value    | Name                  | Description                    |
+|:--------:|:---------------------:|:-------------------------------|
+| Integer  | `none`                | `PacketFlag.none` - `0`        |
+| Integer  | `unk_0x1`             | `PacketFlag.unk_0x1` - `1`     |
+| Integer  | `unk_0x2`             | `PacketFlag.unk_0x2` - `2`     |
+| Integer  | `spawn`               | `PacketFlag.spawn` - `4`      |
+| Integer  | `extended`            | `PacketFlag.extended` - `8`   |
+| Integer  | `flipped`             | `PacketFlag.flipped` - `16`   |
+| Integer  | `standing`            | `PacketFlag.standing` - `32`  |
+| Integer  | `solid`               | `PacketFlag.solid` - `32`     |
+| Integer  | `unk22`               | `PacketFlag.unk22` - `34`     |
+| Integer  | `fire_damage`         | `PacketFlag.fire_damage` - `64`|
+| Integer  | `jump`                | `PacketFlag.jump` - `128`     |
+| Integer  | `got_killed`          | `PacketFlag.got_killed` - `256`|
+| Integer  | `punch`               | `PacketFlag.punch` - `512`    |
+| Integer  | `ghost_jump`          | `PacketFlag.ghost_jump` - `767`|
+| Integer  | `place`               | `PacketFlag.place` - `1024`   |
+| Integer  | `tile_change`         | `PacketFlag.tile_change` - `2048`|
+| Integer  | `punching`            | `PacketFlag.punching` - `2592`|
+| Integer  | `idk2560`             | `PacketFlag.idk2560` - `2560`  |
+| Integer  | `idk2576`             | `PacketFlag.idk2576` - `2576`  |
+| Integer  | `idk2592`             | `PacketFlag.idk2592` - `2592`  |
+| Integer  | `idk2608`             | `PacketFlag.idk2608` - `2608`  |
+| Integer  | `idk2688`             | `PacketFlag.idk2688` - `2688`  |
+| Integer  | `idk2704`             | `PacketFlag.idk2704` - `2704`  |
+| Integer  | `idk3072`             | `PacketFlag.idk3072` - `3072`  |
+| Integer  | `got_punched`         | `PacketFlag.got_punched` - `4096`|
+| Integer  | `respawn`             | `PacketFlag.respawn` - `8192`  |
+| Integer  | `object_collect`      | `PacketFlag.object_collect` - `16384`|
+| Integer  | `trampoline`          | `PacketFlag.trampoline` - `32768`|
+| Integer  | `damage`              | `PacketFlag.damage` - `65536` |
+| Integer  | `slide`               | `PacketFlag.slide` - `131072` |
+| Integer  | `parasol`             | `PacketFlag.parasol` - `262144`|
+| Integer  | `unk_0x80000`         | `PacketFlag.unk_0x80000` - `524288`|
+| Integer  | `swim`                | `PacketFlag.swim` - `1048576` |
+| Integer  | `wall_hang`           | `PacketFlag.wall_hang` - `2097152`|
+| Integer  | `power_up_punch_start`| `PacketFlag.power_up_punch_start` - `4194304`|
+| Integer  | `power_up_punch_end`  | `PacketFlag.power_up_punch_end` - `8388608`|
+| Integer  | `unk_0x1000000`       | `PacketFlag.unk_0x1000000` - `16777216`|
+| Integer  | `unk_0x2000000`       | `PacketFlag.unk_0x2000000` - `33554432`|
+| Integer  | `on_acid_damage`      | `PacketFlag.on_acid_damage` - `67108864`|
+| Integer  | `unk_0x8000000`       | `PacketFlag.unk_0x8000000` - `134217728`|
+| Integer  | `acid_damage`         | `PacketFlag.acid_damage` - `268435456`|
