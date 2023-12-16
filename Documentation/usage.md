@@ -4,7 +4,7 @@
 
 ## Bot
 
-Getting [bot](structs.md#bot) types:
+### Getting [bot](structs.md#bot) types:
 ```lua
 bot = getBot() -- or can be used getSelectedBot()
 bots = getSelectedBots() -- gets selected bots
