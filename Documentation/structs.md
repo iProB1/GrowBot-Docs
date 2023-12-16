@@ -1,35 +1,36 @@
 # Structs
-* [bot_t](#bot_t)
-* [local_t](#local_t)
-* [world_t](#world_t)
-* [npc_t](#npc_t)
-* [net_avatar_t](#net_avatar_t)
-* [world_tile_map_t](#world_tile_map_t)
-* [world_object_map_t](#world_object_map_t)
-* [clothes_t](#clothes_t)
-* [inventory_item_t](#inventory_item_t)
-* [player_items_t](#player_items_t)
-* [item_t](#item_t)
-* [item_info_t](#item_info_t)
+* [bot](#bot)
+* [local](#local)
+* [world](#world)
+* [npc](#npc)
+* [net_avatar](#net_avatar)
+* [world_tile_map](#world_tile_map)
+* [world_object_map](#world_object_map)
+* [clothes](#clothes)
+* [inventory_item](#inventory_item)
+* [player_items](#player_items)
+* [item](#item)
+* [item_info](#item_info)
 * [vec2](#vec2)
 * [vec3](#vec3)
-* [tile_t](#tile_t)
-* [object_t](#object_t)
-* [bool_types](#bool_types)
+* [tile](#tile)
+* [object](#object)
+* [boolypes](#boolypes)
 * [GamePacket](#gamepacket)
 * [variant_list](#variant_list)
-* [tile_extra_t](#tile_extra_t)
+* [tile_extra](#tile_extra)
+* [packet_types](#packet_types)
 
 
-## bot_t
+## bot
 | Type | Name | Description|
 |:-----|:----:|:-----------|
-| [local_t](#local_t) | `getLocal()` | Gets local struct |
-| [world_t](#world_t) | `getWorld()` | Gets world struct |
-| [player_items_t](#player_items_t) | `getInventory()` | Gets inventory struct |
-| [bool_types](#bool_types) | `set_bool(bool_types, boolean true/false)` | Sets bool_types true/false |
+| [local](#local) | `getLocal()` | Gets local struct |
+| [world](#world) | `getWorld()` | Gets world struct |
+| [player_items](#player_items) | `getInventory()` | Gets inventory struct |
+| [boolypes](#boolypes) | `set_bool(boolypes, boolean true/false)` | Sets boolypes true/false |
 
-## local_t
+## local
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | String | `name` | Player's name |
@@ -44,10 +45,10 @@
 | [vec2](#vec2) | `target_pos`  | Player's punch position |
 | [vec2](#vec2) | `pos`  | Player's position |
 | [vec2](#vec2) | `tile` | Player's tile position |
-| [clothes_t](#clothes_t) | `getClothes()` | Gets clothes struct |
-| [player_items_t](#player_items_t) | `getInventory()` | Gets inventory struct |
+| [clothes](#clothes) | `getClothes()` | Gets clothes struct |
+| [player_items](#player_items) | `getInventory()` | Gets inventory struct |
 
-## world_t
+## world
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | String | `name` | World's name |
@@ -56,12 +57,12 @@
 | Bool | `connected` | Is connected to world |
 | Bool | `access` | Is player world access |
 | Integer | `getPlayersCount()` | World player's count |
-| [npc_t](#npc_t) | `getNpcs()` | Gets world ghosts |
-| [net_avatar_t](#net_avatar_t) | `getPlayers()` | Gets world players |
-| [world_tile_map_t](#world_tile_map_t) | `getTileMap()` | Gets world tile_map struct |
-| [world_object_map_t](#world_object_map_t) | `getObjectMap()` | Gets world object_map struct |
+| [npc](#npc) | `getNpcs()` | Gets world ghosts |
+| [net_avatar](#net_avatar) | `getPlayers()` | Gets world players |
+| [worldile_map](#worldile_map) | `getTileMap()` | Gets world tile_map struct |
+| [world_object_map](#world_object_map) | `getObjectMap()` | Gets world object_map struct |
 
-## npc_t
+## npc
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | Integer | `id` | npc id |
@@ -69,7 +70,7 @@
 | [vec2](#vec2) | `pos`  | npc's position |
 | [vec2](#vec2) | `targetpos`  | npc's target position |
 
-## net_avatar_t
+## net_avatar
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | String | `name` | Player's name |
@@ -86,28 +87,28 @@
 | [vec2](#vec2) | `target_pos`  | Player's punch position |
 | [vec2](#vec2) | `pos`  | Player's position |
 | [vec2](#vec2) | `tile` | Player's tile position |
-| [clothes_t](#clothes_t) | `getClothes()` | Gets clothes struct |
+| [clothes](#clothes) | `getClothes()` | Gets clothes struct |
 
-## world_tile_map_t
+## world_tile_map
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | [vec2](#vec2) | `size` | World size |
 | Integer | `count` | World tile count |
-| [tile_t](#tile_t) | `getTiles()` | Gets tiles |
-| [tile_t](#tile_t) | `getTile(Integer id)` | Gets tile |
+| [tile](#tile) | `getTiles()` | Gets tiles |
+| [tile](#tile) | `getTile(Integer id)` | Gets tile |
 
-## world_object_map_t
+## world_object_map
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | Integer | `count` | Object count |
 | Integer | `drop_id` | Object map latest drop_id |
-| [object_t](#object_t) | `getObjects()` | Gets objects |
-| [object_t](#object_t) | `getObject(vec2 tile)` | Gets object |
-| [object_t](#object_t) | `getObject(Integer x, Integer y)` | Gets object |
-| [object_t](#object_t) | `getObject(Integer oid)` | Gets object |
-| [object_t](#object_t) | `getObject(Integer id)` | Gets object |
+| [object](#object) | `getObjects()` | Gets objects |
+| [object](#object) | `getObject(vec2 tile)` | Gets object |
+| [object](#object) | `getObject(Integer x, Integer y)` | Gets object |
+| [object](#object) | `getObject(Integer oid)` | Gets object |
+| [object](#object) | `getObject(Integer id)` | Gets object |
 
-## clothes_t
+## clothes
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | Integer | `hat` | Player's hat |
@@ -124,7 +125,7 @@
 | String | `transmutate` | Player's transmutate |
 | [vec3](#vec3) | `role_skin`  | Player's role_skin |
 
-## inventory_item_t
+## inventory_item
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | Integer | `id` | Item id |
@@ -132,14 +133,14 @@
 | Bool | `wearing` | true/false |
 | Bool | `wearable` | true/false |
 
-## player_items_t
+## player_items
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | Bool | `itemExist(Integer id)` | Is item exist |
 | Integer | `getItemCount(Integer id or String name) or findItem(Integer id or String name)`| Returns the InventoryItem count with the specified item ID. It returns 0 if not found. |
-| [inventory_item_t](#inventory_item_t) | `can_collect(Integer id) -> boolean` | Returns true if the player can collect the item with the specified item ID, false otherwise. |
-| [inventory_item_t](#inventory_item_t) | `getItems()` | Returns a table containing all the inventory_item_t objects in the inventory. |
-| [inventory_item_t](#inventory_item_t) | `getItem(Integer id)` | Returns the inventory_item_t with the specified item ID. It returns nil if not found. |
+| [inventory_item](#inventory_item) | `can_collect(Integer id) -> boolean` | Returns true if the player can collect the item with the specified item ID, false otherwise. |
+| [inventory_item](#inventory_item) | `getItems()` | Returns a table containing all the inventory_item objects in the inventory. |
+| [inventory_item](#inventory_item) | `getItem(Integer id)` | Returns the inventory_item with the specified item ID. It returns nil if not found. |
 
 ## vec2
 | Type | Name | Description|
@@ -154,18 +155,18 @@
 | Integer | `y` | Position y |
 | Integer | `z` | Position z |
 
-## tile_t
+## tile
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | Integer | `foreground` | Tile foreground |
 | Integer | `background` | Tile background |
-| Integer | `parent_tile` | Tile parent_tile |
+| Integer | `parentile` | Tile parentile |
 | Integer | `flag` | Tile flag |
-| Integer | `lock_parent_tile` | Tile lock_parent_tile |
+| Integer | `lock_parentile` | Tile lock_parentile |
 | [vec2](#vec2) | `pos` | Tile's position |
-| [tile_extra_t](#tile_extra_t) | `getTileExtra()` | Gets tile extra |
+| [tile_extra](#tile_extra) | `getTileExtra()` | Gets tile extra |
 
-## object_t
+## object
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | Integer | `id` | Object's id |
@@ -175,7 +176,7 @@
 | [vec2](#vec2) | `pos` | Object's position |
 | [vec2](#vec2) | `tile_pos` | Object's tile position |
 
-## bool_types
+## boolypes
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | Integer | `AA` | AA |
@@ -210,7 +211,7 @@
 | Any | `[4]` | Param 4 |
 | Any | `[5]` | Param 5 |
 
-## item_t
+## item
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | String | `name` | Item name |
@@ -221,13 +222,13 @@
 | Integer | `clothingtype` | Item clothingtype |
 | Integer | `collisiontype` | Item collisionType |
 
-## item_info_t
+## item_info
 | Type | Name | Description|
 |:-----|:----:|:-----------|
-| [item_t](#item_t) | `getItemInfo(Integer id or String name) or getInfo(Integer id or String name)` | Gets item by id and name |
+| [item](#item) | `getItemInfo(Integer id or String name) or getInfo(Integer id or String name)` | Gets item by id and name |
 true/false |
 
-## tile_extra_t
+## tile_extra
 | Type | Name | Description|
 |:-----|:----:|:-----------|
 | Table | `Door` | Returns table tile extra door |
@@ -237,3 +238,54 @@ true/false |
 | Table | `Dice` | Returns table tile extra dice |
 | Table | `Display_Block` | Returns table tile extra display block |
 | Table | `Vending` | Returns table tile extra vending |
+
+## packet_types
+| Type    | Name                  | Description                    |
+|:-------:|:---------------------:|:-------------------------------|
+| Integer | `State`               | `PacketType.State`             |
+| Integer | `CallFunction`        | `PacketType.CallFunction`      |
+| Integer | `UpdateStatus`        | `PacketType.UpdateStatus`      |
+| Integer | `TileChangeRequest`   | `PacketType.TileChangeRequest` |
+| Integer | `SendMapData`         | `PacketType.SendMapData`       |
+| Integer | `SendTileUpdateData`  | `PacketType.SendTileUpdateData`|
+| Integer | `SendTileUpdateDataMultiple` | `PacketType.SendTileUpdateDataMultiple` |
+| Integer | `TileActivateRequest` | `PacketType.TileActivateRequest`|
+| Integer | `TileApplyDamage`     | `PacketType.TileApplyDamage`   |
+| Integer | `SendInventoryState`  | `PacketType.SendInventoryState`|
+| Integer | `ItemActivateRequest` | `PacketType.ItemActivateRequest`|
+| Integer | `ItemActivateObjectRequest` | `PacketType.ItemActivateObjectRequest` |
+| Integer | `SendTileTreeState`   | `PacketType.SendTileTreeState` |
+| Integer | `ModifyItemInventory` | `PacketType.ModifyItemInventory` |
+| Integer | `ItemChangeObject`    | `PacketType.ItemChangeObject`  |
+| Integer | `SendLock`            | `PacketType.SendLock`           |
+| Integer | `SendItemDatabaseData`| `PacketType.SendItemDatabaseData`|
+| Integer | `SendParticleEffect`  | `PacketType.SendParticleEffect` |
+| Integer | `SetIconState`        | `PacketType.SetIconState`       |
+| Integer | `ItemEffect`          | `PacketType.ItemEffect`         |
+| Integer | `SetCharacterState`   | `PacketType.SetCharacterState`  |
+| Integer | `PingReply`           | `PacketType.PingReply`          |
+| Integer | `PingRequest`         | `PacketType.PingRequest`        |
+| Integer | `GotPunched`          | `PacketType.GotPunched`         |
+| Integer | `AppCheckResponse`    | `PacketType.AppCheckResponse`   |
+| Integer | `AppIntegrityFail`    | `PacketType.AppIntegrityFail`   |
+| Integer | `Disconnect`          | `PacketType.Disconnect`         |
+| Integer | `BattleJoin`          | `PacketType.BattleJoin`         |
+| Integer | `BattleEvent`         | `PacketType.BattleEvent`        |
+| Integer | `UseDoor`             | `PacketType.UseDoor`            |
+| Integer | `SendParental`        | `PacketType.SendParental`       |
+| Integer | `GoneFishin`          | `PacketType.GoneFishin`         |
+| Integer | `Steam`               | `PacketType.Steam`              |
+| Integer | `PetBattle`           | `PacketType.PetBattle`          |
+| Integer | `NPC`                 | `PacketType.NPC`                |
+| Integer | `Special`             | `PacketType.Special`            |
+| Integer | `SendParticleEffectV2`| `PacketType.SendParticleEffectV2` |
+| Integer | `ActiveArrowToItem`   | `PacketType.ActiveArrowToItem`  |
+| Integer | `SelectTileIndex`     | `PacketType.SelectTileIndex`    |
+| Integer | `SendPlayerTributeData`| `PacketType.SendPlayerTributeData` |
+| Integer | `SetQuickSlotItem`    | `PacketType.SetQuickSlotItem`   |
+| Integer | `PvENPC`              | `PacketType.PvENPC`             |
+| Integer | `PvPCardBattleEvent`  | `PacketType.PvPCardBattleEvent` |
+| Integer | `PvEPlayerDamage`     | `PacketType.PvEPlayerDamage`    |
+| Integer | `PvENPCState`         | `PacketType.PvENPCState`        |
+| Integer | `SetExtraMods`        | `PacketType.SetExtraMods`       |
+| Integer | `OnStepOnTileMod`     | `PacketType.OnStepOnTileMod`    |
