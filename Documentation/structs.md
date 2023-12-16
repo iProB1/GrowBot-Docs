@@ -1,6 +1,5 @@
 # Structs
 * [bot](#bot)
-* [local](#local)
 * [world](#world)
 * [npc](#npc)
 * [net_avatar](#net_avatar)
@@ -26,14 +25,6 @@
 ## bot
 | Type | Name | Description|
 |:-----|:----:|:-----------|
-| [local](#local) | `getLocal()` | Gets local struct |
-| [world](#world) | `getWorld()` | Gets world struct |
-| [player_items](#player_items) | `getInventory()` | Gets inventory struct |
-| [boolypes](#boolypes) | `set_bool(boolypes, boolean true/false)` | Sets boolypes true/false |
-
-## local
-| Type | Name | Description|
-|:-----|:----:|:-----------|
 | String | `name` | Player's name |
 | String | `country` | Player's flag id |
 | String | `platform` | Player's platform (IOS/WINDOWS/ANDROID) |
@@ -48,6 +39,9 @@
 | [vec2](#vec2) | `tile` | Player's tile position |
 | [clothes](#clothes) | `getClothes()` | Gets clothes struct |
 | [player_items](#player_items) | `getInventory()` | Gets inventory struct |
+| [world](#world) | `getWorld()` | Gets world struct |
+| [player_items](#player_items) | `getInventory()` | Gets inventory struct |
+| [boolypes](#boolypes) | `set_bool(boolypes, boolean true/false)` | Sets boolypes true/false |
 
 ## world
 | Type | Name | Description|
