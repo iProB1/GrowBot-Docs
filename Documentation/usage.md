@@ -18,11 +18,13 @@ bots2 = getBots() -- gets all bots
 
 Sends [GamePacket](structs.md#GamePacket) to server.
 
+used structs [vec2i](structs.md#vec2i), [vec2f](structs.md#vec2f), [packet_types](structs.md#packet_types)
+
 Examples:
 ```lua
 -- it isn't doing anything
 packet = GamePacket()
-packet.type = 0
+packet.type = PacketType.State -- or you can write 0
 packet.objtype = 1
 packet.count1 = 42
 packet.count2 = 64
@@ -44,7 +46,7 @@ getBot():SendPacketRaw(packet)
 -- Sends wear clothing packet
 bot = getBot()
 packet = GamePacket()
-packet.type = 10 
+packet.type = PacketType.ItemActivateRequest -- or you can write 10
 packet.int_data = 48 -- Item ID (Jeans)
 bot:sendPacketRaw(packet)
 ```
