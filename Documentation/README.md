@@ -1,5 +1,6 @@
 ## GrowBot Documentation
 * version: 1.0
+* [Hooks](hooks.md)
 * [Structs](structs.md)
 * [Usage](usage.md)
 * [ImGui Api](imgui.md)
