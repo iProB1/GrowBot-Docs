@@ -54,7 +54,7 @@ bot:Punch(bot.tile.x + 1, bot.tile.y) -- punchs to right tile
 ```
 
 Place:
-`Place(int itemid, int x, int y)`
+`Place(int x, int y, int itemid)`
 ```lua
 -- places to tile position
 bot = getBot()
