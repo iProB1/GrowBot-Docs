@@ -37,7 +37,7 @@
 | [vec2](#vec2) | `pos`  | Bot's position |
 | [vec2](#vec2) | `tile` | Bot's tile position |
 | Function | `punch(int x, int y)` | Punchs to tile position |
-| Function | `place(int itemid, int x, int y)` | Places to tile position |
+| Function | `place(int x, int y, int itemid)` | Places to tile position |
 | Function | `wrench(int x, int y)` | Wrenchs to tile position |
 | Function | `findPath(int x, int y)` | Teleports to tile position |
 | Function | `enter()` | Enter a door or portal |
