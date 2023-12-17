@@ -122,11 +122,11 @@
 |:-----|:----:|:-----------|
 | Integer | `hat` | Player's hat |
 | Integer | `shirt` | Player's shirt |
-| Integer | `pant` | Player's pant |
+| Integer | `pants` | Player's pants |
 | Integer | `feet` | Player's feet |
 | Integer | `face` | Player's face |
 | Integer | `hand` | Player's hand |
-| Integer | `wing` | Player's wing |
+| Integer | `back` | Player's back |
 | Integer | `hair` | Player's hair |
 | Integer | `chest` | Player's chest |
 | Integer | `skin` | Player's skin |
